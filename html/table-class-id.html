@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Table-cls-id</title>
+    </head>
+    <body>
+        <h1>TimeTable</h1>
+        <table style="border:1px solid black;">
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th rowspan="6">BREAK</th>
+                <th>3</th>
+                <th>4</th>
+                <th rowspan="6">Lunch</th>
+                <th>5</th>
+                <th>6</th>
+                <th rowspan="6">BREAK</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+            </tr>
+            <tr>
+                <td colspan="2">Java</td>
+                <td colspan="2">Flutter</td>
+                <td>Database Management System</td>
+                <td>Python</td>
+                <td class="important">Web development</td>
+                <td colspan="2">Ethical Hacking</td>
+            </tr>
+            <tr>
+                <td colspan="2">Data structure</td>
+                <td colspan="2" class="important">Web development</td>
+                <td colspan="2">Database Management System</td>
+                <td>Python</td>
+                <td>Flutter</td>
+                <td>Automation</td>
+            </tr>
+            <tr>
+                <td colspan="2">Ethical Hacking</td>
+                <td colspan="2">Ethical Hacking</td>
+                <td colspan="2">Flutter</td>
+                <td colspan="2" class="important">Web development</td>
+                <td colspan="2">Automation</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Data structure</td>
+                <td>Database Management System</td>
+                <td>Python</td>
+                <td colspan="2" class="important">Web development</td>
+                <td colspan="3">Flutter</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="important">Web development</td>
+                <td colspan="2">Java</td>
+                <td>Maths</td>
+                <td>Automation</td>
+                <td colspan="3" id="freetime"><b>Workout</b></td>
+            </tr>
+        </table>
+    </body>
+    <style>
+        th,td{
+            border:1px solid black;
+        }
+        .important{
+            background-color: black;
+            color:white;
+        }
+        #freetime{
+            background-color: rgb(122, 122, 122);
+            color:white;
+            text-align: center; 
+        }
+    </style>
+</html>
