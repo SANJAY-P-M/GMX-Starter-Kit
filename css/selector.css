@@ -1,0 +1,25 @@
+/*Element selector*/
+header{
+    text-align: center;
+    background-color: greenyellow;
+    height:80px;
+    padding: auto;
+}
+/*Id selector*/
+#red{
+    color: red;
+}
+#blue{
+    color: blue;
+}
+/*Class selector*/
+.bg-black{
+    background-color: black;
+}
+.clr-white{
+    color: white;
+}
+/*Universal selector*/
+*{
+    background-color: black;
+}
