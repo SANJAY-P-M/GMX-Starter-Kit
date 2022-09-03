@@ -1,0 +1,70 @@
+header img{
+    width:75px;
+    height: 55px;
+    border-radius: 45%;
+}
+*{
+    transition: 0.7s;
+    overflow: visible;
+}
+body{
+    background-color: darkgray;
+}
+header{
+    background-color: rgb(230, 230, 230);
+}
+header figure figcaption{
+    float: right;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.card{
+    border-radius:15px;
+    margin:20px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.card img{
+    width:100%;
+    border-radius: 15px;
+}
+.card button{
+    transition: 1s;
+    width: 100px;
+    cursor: pointer;
+    padding: 6px;
+    background-color: rgb(47, 47, 148);
+    color: white;
+    border: none;
+    margin: 0 10px 2px 15px;
+    border-radius: 15px
+}
+.card button:hover{
+    box-shadow:0 0 10px rgba(255, 255, 255, 0.736);
+}
+.btn{
+    display:inline-flex;
+    height:50px;
+}
+.card p{
+    padding:10px;
+    margin-top:0px;
+    height: 150px;
+}
+.card figure img{
+    height: 100px;
+}
+.card figure figcaption{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+main{
+    width:1250px;
+    display:flex;
+    overflow: scroll;
+    margin:auto;
+}
