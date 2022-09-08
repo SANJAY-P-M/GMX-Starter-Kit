@@ -60,9 +60,7 @@ em a{
     font-size: larger;
     word-spacing:3px;
 }
-#simplify ul{
-    margin-top: 10px;
-}
+
 .tab-link{
     text-decoration: none;
     display: inline;
@@ -77,15 +75,15 @@ em a{
     content: "";
     position: absolute;
     width: 0px;
-    background-color: rgba(255, 255, 255, 0.537);
+    background-color:rgba(255, 0, 0, 0.658);
     left: 0px;
     bottom: -5px;
     height: 3px;
-    border-radius: 20%;
+    border-radius: 15px;
     transition: 1s;
 }
 .tab-link:hover::after{
-    width:90%;
+    width:100%;
 }
 #achievements ul li a{
     color:white;
@@ -104,19 +102,34 @@ em a{
 }
 .tab-content{
     display: none;
+}
+.active-link{
     background-color: rgb(22, 22, 22);
-    border-radius:18px;
+    font-size: 18px;
+}
+.active-content{
+    display:block;
+    height:fit-content;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    border-radius:15px;
+}
+section{
+    margin-top: 15px;
+    transition: 1s;
 }
 /*-------------------------------------------------front-ends-------------------------------------------*/
 /*-------------------------------------------------tech-start--------------------------------------------*/
 .set-img{
     width:-webkit-fill-available;
     border-radius: 6%;
-    height: 210px;
-    
+    height: 210px; 
+}
+.box figure{    
+    width:407px;   
 }
 .box{
-    width:33%;
+    width:fit-content;
     background-color: black;
     border-radius: 5%;
     border:5px solid white;
@@ -124,7 +137,6 @@ em a{
     font-size: large;
     color: white;
     margin-right:70px;
-    position: relative;
     height:fit-content;
 }
 .row{
@@ -148,9 +160,6 @@ em a{
 }
 .btn{
     width: fit-content;
-    position: absolute;
-    left: 32%;
-    bottom: 25px;
     margin: 0px auto;
 }
 .btn a:hover{
