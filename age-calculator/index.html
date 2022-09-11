@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="SANJAY P M">
+    <meta name="description" content="age calculator,calculate my age">
+    <title>Age calculator</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Age Calculator</h1>
+            Hey doode !
+            Fill it out to calculate your age
+        </header>
+        <form>
+            <label>
+                Your date of birth :
+                <input type="date" name="date">
+            </label>
+            <br>
+            <button type="submit" onclick="age()">Calculate</button>
+        </form>
+    </main>
+</body>
+<style>
+    :root{
+        --bg-color:rgba(255, 255, 255, 0.559);
+        --base-color:rgb(166, 244, 98);
+    }
+    *{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    body{
+        background-color:var(--base-color) ;
+    }
+    header{
+        width:100%;
+        margin:auto;
+        text-align: center;
+        background-color:var(--bg-color) ;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+    form{
+        text-align: center;
+        background-color: var(--bg-color);
+        border-radius: 20px;
+    }
+    form input,form button{
+        margin:10px 0;
+        font-size: larger;
+    }
+    button{
+        background-color: var(--base-color);
+        padding: 10px;
+        border-radius: 15px;
+        color: black;
+        width: 200px;
+        border: none;
+        transition: background-color 0.7s;
+    }
+    button:hover{
+        background-color: var(--bg-color);
+        border: 1px solid black;
+    }
+</style>
+<script>
+    function age(){
+       let dob = Date(document.getElementsByName("date").value);
+       /*Stuck down here*/
+       console.log(dob);
+    }
+</script>
+</html>
