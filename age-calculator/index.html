@@ -18,11 +18,17 @@
         <form>
             <label>
                 Your date of birth :
-                <input type="date" name="date">
+                <input type="date" id="date">
             </label>
             <br>
-            <button type="submit" onclick="age()">Calculate</button>
+            <button type="button" id="calculate">Calculate</button>
         </form>
+        <section>
+            <div class="box" id="month">5</div>
+            <div class="box" id="year">5</div>
+            <div class="lable">Month</div>
+            <div class="lable">Year</div>
+        </section>
     </main>
 </body>
 <style>
@@ -68,12 +74,56 @@
         background-color: var(--bg-color);
         border: 1px solid black;
     }
+    .box{
+        background-color: var(--bg-color);
+        width: 300px;
+        height: 300px;
+        display: inline-flex;
+        margin-right: 30px;
+        font-size: 100px;
+        padding: 70px;
+    }
+    section{
+        width: fit-content;
+        margin: 55px auto;
+    }
+    .lable{
+        background-color: var(--bg-color);
+        width: 300px;
+        display: inline-flex;
+        margin-right: 30px;
+        margin-top: 10px;
+        padding: 0 110px;
+    }
 </style>
 <script>
-    function age(){
-       let dob = Date(document.getElementsByName("date").value);
-       /*Stuck down here*/
-       console.log(dob);
-    }
+    var dob;
+    document.getElementById("date").addEventListener("change",function(){
+        dob =new Date(this.value);
+    })
+    document.getElementById("calculate").addEventListener("click",function(){
+        var dyear= dob.getFullYear();
+        var dmonth = dob.getMonth()+1;
+        var dday = dob.getDate();
+        var cdate =new Date();
+        var cyear= cdate.getFullYear();
+        var cmonth = cdate.getMonth()+1;
+        var cday = cdate.getDate();
+        var ayear = cyear-dyear;
+        var amonth;
+        var aday ;
+        if(cmonth>dmonth)
+            amonth=cmonth-dmonth;
+        else if(cmonth<dmonth)
+            amonth=12-dmonth+cmonth;
+        else{
+            amonth=0;
+            ayear++;
+        }
+        var boxmonth =document.getElementById("month");
+        boxmonth.innerHTML=amonth;
+        var boxyear =document.getElementById("year");
+        boxyear.innerHTML=ayear;
+    })
 </script>
 </html>
